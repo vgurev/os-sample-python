@@ -6,7 +6,7 @@ counter = 0
 @application.route("/")
 def hello():
     counter += 1
-    return "Hello World! " + int(counter)
+    return "Hello World! " + str(counter)
 
 if __name__ == "__main__":
     application.run()
