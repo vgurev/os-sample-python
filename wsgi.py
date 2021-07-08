@@ -5,6 +5,7 @@ counter = 0
 
 @application.route("/")
 def hello():
+    global counter
     counter += 1
     return "Hello World! " + str(counter)
 
